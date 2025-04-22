@@ -1,13 +1,12 @@
+import './config/database.js';
 import express from 'express';
 import routes from './routes.js';
- 
-import './config/database.js';
 
 class App {
 	constructor() {
-		this.server = express(); //create an express aplication, and save in this.server
-		this.middleware(); //tells the server to use json
-		this.routes(); //tells the server to use this routes, they were imported from "./routes"
+		this.server = express(); 
+		this.middleware(); 
+		this.routes(); 
 	}
 
 	middleware() {
@@ -19,4 +18,4 @@ class App {
 	}
 }
 
-export default new App().server; //export the object App().server
+export default new App().server;

@@ -1,7 +1,7 @@
 import * as Yup from 'yup';
-import User from '../models/user';
-import Account from '../models/account';
-import Institution from '../models/institution';
+import User from '../models/user.js';
+import Account from '../models/account.js';
+import Institution from '../models/institution.js';
  
 class UserController {
 	async index(req, res) {
